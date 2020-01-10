@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="node_modules/jquery/dist/jquery.js" defer></script>
+    <script src="code.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="index.php" method="GET" class="form_reg">
+            <fieldset class="form_reg__fieldset"> Форма регистрации</fieldset>
+            <label for="name" class="form_reg__label" > Ваше имя </label>
+            <input type="text" name="name" class="form_reg__input" autofocus maxlength="30">
+            <label for="email" class="form_reg__label"> Ваша почта </label>
+            <input type="email" name="email" class="form_reg__input" >
+            <label for="password" class="form_reg__label"> Ваш пароль </label>
+            <input type="password" name="password" class="form_reg__input" >
+            <label for="confirm" class="form_reg__label"> Повтор пароля </label>
+            <input type="password" name="confirm" class="form_reg__input" >
+
+            <label for="check">Я согласен с условиями обработки персональных данных</label>
+            <input type="checkbox" name="check" id="">
+
+            <button type="submit" class="form_reg__submit">Отправить</button>
+
+        </form>
+    </div>
+
+
+</body>
+</html>
